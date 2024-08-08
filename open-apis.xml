@@ -4,10 +4,65 @@
         <report-name>Open apis</report-name>
         <environment>beta</environment>
         <mode>optimize</mode>
+        <threads>10</threads>
         <jewel-user>gem-sakshiagrawal</jewel-user>
         <jewel-bridge-token>d7c6bc19-981a-422c-bb1c-d8d5c06fa94c1713258883273</jewel-bridge-token>
     </suite>
     <testcases>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>post</Method>
+            <body>{"userId": "1", "title": "New Todo", "completed": "False"}</body>
+            <API>https://jsonplaceholder.typicode.com/todos</API>
+            <Name>Create a New Todo</Name>
+            <expected-status-code>201,200</expected-status-code>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>post</Method>
+            <body>{"albumId": 1, "title": "New Photo", "url": "http://placekitten.com/200/300", "thumbnailUrl": "http://placekitten.com/200/300"}</body>
+            <API>https://jsonplaceholder.typicode.com/photos</API>
+            <Name>upload a new photo</Name>
+            <expected-status-code>201,200</expected-status-code>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>post</Method>
+            <body>{"title": "New Album", "userId": 1}</body>
+            <API>https://jsonplaceholder.typicode.com/albums</API>
+            <Name>create a new album</Name> 
+            <expected-status-code>201,200</expected-status-code>  
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>post</Method>
+            <body>{"postId": 1, "name": "foo", "email": "bar@example.com", "body": "Nice post!"}</body>
+            <API>https://jsonplaceholder.typicode.com/comments</API>
+            <Name>create a comment</Name>   
+            <expected-status-code>201,200</expected-status-code>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>post</Method>
+            <body>{"title": "foo", "body": "bar", "userId": 1}</body>
+            <API>https://jsonplaceholder.typicode.com/posts</API>
+            <Name>create a post</Name>  
+            <expected-status-code>201,200</expected-status-code>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>post</Method>
+            <body>{"name": "Jane Doe", "username": "janedoe", "email": "janedoe@example.com"}</body>
+            <API>https://jsonplaceholder.typicode.com/users</API>
+            <Name>Create a New User</Name>   
+            <expected-status-code>201,200</expected-status-code>   
+        </testcase>
         <testcase>
             <type>pyprest</type>
             <run-flag>Y</run-flag>
@@ -253,7 +308,7 @@
             <run-flag>Y</run-flag>
             <Method>GET</Method>
             <API>https://api.adviceslip.com/advice</API>
-            <Name>Random advice 2</Name>
+            <Name>Random advice 3</Name>
         </testcase>
         <testcase>
             <type>pyprest</type>
@@ -316,7 +371,7 @@
             <run-flag>Y</run-flag>
             <Method>GET</Method>
             <API>https://api.quotable.io/random</API>
-            <Name>Inspirational Quotes</Name>   
+            <Name>Inspirational Quotes 2</Name>   
         </testcase>
         <testcase>
             <type>pyprest</type>
@@ -330,7 +385,7 @@
             <run-flag>Y</run-flag>
             <Method>GET</Method>
             <API>https://api.quotable.io/random</API>
-            <Name>Inspirational Quotes 2</Name>   
+            <Name>Inspirational Quotes 3</Name>   
         </testcase>
         <testcase>
             <type>pyprest</type>
@@ -360,5 +415,425 @@
             <API>https://date.nager.at/api/v3/PublicHolidays/2023/US</API>
             <Name>Public Holidays</Name>   
         </testcase>
+
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>post</Method>
+            <body>{"message": "Hello, Mocky!"}</body>
+            <API>https://run.mocky.io/v3/3ffb50c1-4c82-46df-bf3e-826519e8a7d5</API>
+            <Name>Create a Resource in Mocky API</Name> 
+            <expected-status-code>201,404</expected-status-code>    
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>post</Method>
+            <body>{"name": "John Doe", "email": "john.doe@example.com", "message": "Hello there!"}</body>
+            <API>https://run.mocky.io/v3/6316353c-d776-41b4-b720-098a8427a565</API>
+            <Name>Submit a Contact Form to Mocky API</Name>   
+            <expected-status-code>201,404</expected-status-code>    
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>post</Method>
+            <body>{"name": "morpheus", "job": "leader"}</body>
+            <API>https://reqres.in/api/users</API>
+            <Name>Create a New Resource in ReqRes API</Name>   
+            <expected-status-code>201,200</expected-status-code>  
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>delete</Method>
+            <API>https://jsonplaceholder.typicode.com/posts/1</API>
+            <Name>Delete a Specific Resource in JSONPlaceholder</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>post</Method>
+            <body>{"name": "John", "age": 30}</body>
+            <API>https://httpbin.org/delete</API>
+            <Name>Delete a Form Submission in HTTPBin</Name> 
+            <expected-status-code>405</expected-status-code>    
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>delete</Method>
+            <API>https://reqres.in/api/users/2</API>
+            <Name>Delete a Resource in ReqRes API</Name>   
+            <expected-status-code>204</expected-status-code>    
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>delete</Method>
+            <API>https://run.mocky.io/v3/3ffb50c1-4c82-46df-bf3e-826519e8a7d5</API>
+            <Name>Delete a Resource in Mocky API</Name> 
+            <expected-status-code>404</expected-status-code>    
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>delete</Method>
+            <API>https://jsonplaceholder.typicode.com/users/1</API>
+            <Name>Delete a User</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>delete</Method>
+            <API>https://jsonplaceholder.typicode.com/todos/1</API>
+            <Name>Delete a todo</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>delete</Method>
+            <API>https://jsonplaceholder.typicode.com/photos/1</API>
+            <Name>Delete a Photo</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>delete</Method>
+            <API>https://jsonplaceholder.typicode.com/albums/1</API>
+            <Name>Delete a album</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>delete</Method>
+            <API>https://jsonplaceholder.typicode.com/comments/1</API>
+            <Name>Delete a comment</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>delete</Method>
+            <API>https://jsonplaceholder.typicode.com/posts/1</API>
+            <Name>Delete a post</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>put</Method>
+            <API>https://jsonplaceholder.typicode.com/todos/1</API>
+            <Name>Update a Todo in JSONPlaceholder</Name>   
+            <body>{"id": 1, "userId": 1, "title": "Updated Task", "completed": "False"}</body>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>put</Method>
+            <body>{"name": "John", "age": 35}</body>
+            <API>https://httpbin.org/put</API>
+            <Name>Update a Form Submission in HTTPBin</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>put</Method>
+            <body>{"name": "morpheus", "job": "zion resident"}</body>
+            <API>https://reqres.in/api/users/2</API>
+            <Name>Update a Resource in ReqRes API</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>put</Method>
+            <body>{"message": "Updated Message"}</body>
+            <API>https://run.mocky.io/v3/3ffb50c1-4c82-46df-bf3e-826519e8a7d5</API>
+            <Name>Update a Resource in Mocky API</Name>  
+            <expected-status-code>201,404</expected-status-code> 
+
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>put</Method>
+            <body> {"id": 1, "name": "Updated Name", "username": "updatedusername", "email": "updated@example.com"}</body>
+            <API>https://jsonplaceholder.typicode.com/users/1</API>
+            <Name>update a User</Name>   
+        </testcase>
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"message": "Creating a new resource"}</Body>
+            <API>https://run.mocky.io/v3/2be8b5ba-012e-4763-b91b-df11110acb30</API>
+            <Name>Create a New Resource in Mocky API</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <expected-status-code>201,404</expected-status-code>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"firstname": "Jim", "lastname": "Brown", "totalprice": 111, "depositpaid": "True"}</Body>
+            <API>https://reqres.in/api/booking</API>
+            <Name>Create a New Booking in ReqRes API</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>            
+            <expected-status-code>200,201,404</expected-status-code>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"order_id": "12345", "item": "Laptop"}</Body>
+            <API>https://httpbin.org/post</API>
+            <Name>Create a New Order in HTTPBin</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"title": "Feedback", "body": "Great service!", "userId": 2}</Body>
+            <API>https://jsonplaceholder.typicode.com/posts</API>
+            <Name>Submit Feedback in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <expected-status-code>200,201</expected-status-code>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"name": "Alice", "age": 25}</Body>
+            <API>https://httpbin.org/post</API>
+            <Name>Create a New Resource in HTTPBin</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"title": "New Blog Post", "body": "This is the content of the new blog post.", "userId": 1}</Body>
+            <API>https://jsonplaceholder.typicode.com/posts</API>
+            <Name>Create a New Blog Post in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>            
+            <expected-status-code>201,200</expected-status-code>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"userId": 1, "title": "New To-Do", "completed": "False"}</Body>
+            <API>https://jsonplaceholder.typicode.com/todos</API>
+            <Name>Add a New To-Do in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <expected-status-code>200,201,404</expected-status-code>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"record": "New record"}</Body>
+            <API>https://run.mocky.io/v3/3e0d5a7a-abc9-4b47-82fa-df51871be72c</API>
+            <Name>Create a New Record in Mocky API</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <expected-status-code>201,404</expected-status-code>
+
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"first_name": "Emma", "last_name": "Smith"}</Body>
+            <API>https://httpbin.org/post</API>
+            <Name>Submit a New Form to HTTPBin</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <expected-status-code>200,201,404</expected-status-code>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"title": "New Note", "body": "This is a new note.", "userId": 3}</Body>
+            <API>https://jsonplaceholder.typicode.com/posts</API>
+            <Name>Create a New Note in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <expected-status-code>200,201,404</expected-status-code>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"name": "Steve", "job": "Developer"}</Body>
+            <API>https://reqres.in/api/users</API>
+            <Name>Create a New Entry in ReqRes API</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <expected-status-code>200,201,404</expected-status-code>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"feedback": "Excellent service!"}</Body>
+            <API>https://run.mocky.io/v3/4a6fa6d2-c1f3-4ad5-85ee-6b1cf77e4d56</API>
+            <Name>Submit New Feedback to Mocky API</Name>
+            <expected-status-code>200,201,404</expected-status-code>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"question_1": "Yes", "question_2": "No"}</Body>
+            <API>https://httpbin.org/post</API>
+            <Name>Submit a Survey Response to HTTPBin</Name>
+            <type>pyprest</type>
+            <expected-status-code>200,201,404</expected-status-code>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"postId": 1, "name": "John", "email": "john@example.com", "body": "This is a comment."}</Body>
+            <API>https://jsonplaceholder.typicode.com/comments</API>
+            <Name>Create a New Comment in JSONPlaceholder</Name>
+            <expected-status-code>200,201,404</expected-status-code>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>POST</Method>
+            <Body>{"userId": 2, "title": "New Task", "completed": "False"}</Body>
+            <API>https://jsonplaceholder.typicode.com/todos</API>
+            <Name>Create a New Task in JSONPlaceholder</Name>
+            <expected-status-code>200,201,404</expected-status-code>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"firstname": "James", "lastname": "Brown", "totalprice": 112, "depositpaid": "False"}</Body>
+            <API>https://reqres.in/api/booking/1</API>
+            <Name>Update a Booking in ReqRes API</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"name": "Alice", "age": 26}</Body>
+            <API>https://httpbin.org/put</API>
+            <Name>Update a Form Submission in HTTPBin</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"id": 1, "title": "Updated Post Title", "body": "Updated Post Content", "userId": 1}</Body>
+            <API>https://jsonplaceholder.typicode.com/posts/1</API>
+            <Name>Update an Existing Post in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"id": 1, "postId": 1, "name": "Updated Name", "email": "updated@example.com", "body": "Updated Comment Content"}</Body>
+            <API>https://jsonplaceholder.typicode.com/comments/1</API>
+            <Name>Update a Comment in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"id": 1, "albumId": 1, "title": "Updated Photo Title", "url": "http://placekitten.com/300/400", "thumbnailUrl": "http://placekitten.com/300/400"}</Body>
+            <API>https://jsonplaceholder.typicode.com/photos/1</API>
+            <Name>Update a Photo in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"id": 1, "name": "Updated User", "username": "updatedusername", "email": "updateduser@example.com"}</Body>
+            <API>https://jsonplaceholder.typicode.com/users/1</API>
+            <Name>Update a User's Info in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"order_id": "12345", "item": "Updated Laptop"}</Body>
+            <API>https://httpbin.org/put</API>
+            <Name>Update an Order in HTTPBin</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"name": "Mike", "job": "Manager"}</Body>
+            <API>https://reqres.in/api/users/1</API>
+            <Name>Update a Record in ReqRes API</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"id": 1, "userId": 1, "title": "Updated Task Title", "completed": "True"}</Body>
+            <API>https://jsonplaceholder.typicode.com/todos/1</API>
+            <Name>Update a To-Do in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"id": 2, "title": "Updated Note Title", "body": "Updated Note Content", "userId": 2}</Body>
+            <API>https://jsonplaceholder.typicode.com/posts/2</API>
+            <Name>Update a Note in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>PUT</Method>
+            <Body>{"feedback": "Updated feedback: Still excellent service!"}</Body>
+            <API>https://run.mocky.io/v3/4a6fa6d2-c1f3-4ad5-85ee-6b1cf77e4d56</API>
+            <Name>Update a Feedback in Mocky API</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <expected-status-code>200,201,404</expected-status-code>
+        </testcase>
+    
+        <testcase>
+            <Method>DELETE</Method>
+            <Body></Body>
+            <API>https://reqres.in/api/booking/1</API>
+            <Name>Delete a Booking in ReqRes API</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <expected-status-code>204,200</expected-status-code>
+        </testcase>
+    
+        <testcase>
+            <Method>DELETE</Method>
+            <Body></Body>
+            <API>https://jsonplaceholder.typicode.com/comments/2</API>
+            <Name>Delete a Comment in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+    
+        <testcase>
+            <Method>DELETE</Method>
+            <API>https://jsonplaceholder.typicode.com/users/3</API>
+            <Name>Delete a User in JSONPlaceholder</Name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+        
     </testcases>
 </data>
