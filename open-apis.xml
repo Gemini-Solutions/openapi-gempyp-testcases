@@ -9,6 +9,22 @@
     </suite>
     <testcases>
         <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <headers>{"Accept": "application/json"}</headers>
+            <API>https://icanhazdadjoke.com/</API>
+            <Name>jokes api</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <headers>{"Content-Type": "application/x-www-form-urlencoded"}</headers>
+            <API>https://aztro.sameerkumar.website/?sign=aries&day=today</API>
+            <Name>Astrology API (Daily Horoscope)</Name>   
+        </testcase>
+        <testcase>
             <name>Fake posts</name>
             <type>pyprest</type>
             <run-flag>Y</run-flag>
@@ -321,15 +337,7 @@
             <run-flag>Y</run-flag>
             <Method>GET</Method>
             <API>https://api.weather.gov/openapi.json</API>
-            <Name>Weather api</Name>   
-        </testcase>
-        <testcase>
-            <type>pyprest</type>
-            <run-flag>Y</run-flag>
-            <Method>GET</Method>
-            <headers>{"Content-Type": "application/x-www-form-urlencoded"}</headers>
-            <API>https://aztro.sameerkumar.website/?sign=aries&day=today</API>
-            <Name>Astrology API (Daily Horoscope)</Name>   
+            <Name>Weather api</Name>  
         </testcase>
         <testcase>
             <type>pyprest</type>
@@ -351,14 +359,6 @@
             <Method>GET</Method>
             <API>https://date.nager.at/api/v3/PublicHolidays/2023/US</API>
             <Name>Public Holidays</Name>   
-        </testcase>
-        <testcase>
-            <type>pyprest</type>
-            <run-flag>Y</run-flag>
-            <Method>GET</Method>
-            <headers>{"Accept": "application/json"}</headers>
-            <API>https://icanhazdadjoke.com/</API>
-            <Name>jokes api</Name>   
         </testcase>
     </testcases>
 </data>
