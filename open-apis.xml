@@ -91,6 +91,13 @@
             <type>pyprest</type>
             <run-flag>Y</run-flag>
             <Method>GET</Method>
+            <API>https://api.agify.io?name=rahul</API>
+            <Name>Age prediction for Rahul</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
             <API>https://api.agify.io?name=michael</API>
             <Name>Age prediction for Michael</Name>            
         </testcase>
@@ -114,6 +121,13 @@
             <Method>GET</Method>
             <API>https://api.genderize.io?name=Lucky</API>
             <Name>Gender prediction for Lucky</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.genderize.io?name=Ravi</API>
+            <Name>Gender prediction for Ravi</Name>            
         </testcase>
         <testcase>
             <type>pyprest</type>
@@ -308,13 +322,6 @@
             <type>pyprest</type>
             <run-flag>Y</run-flag>
             <Method>GET</Method>
-            <API>http://jservice.io/api/random</API>
-            <Name>JService (Jeopardy Questions)</Name>   
-        </testcase>
-        <testcase>
-            <type>pyprest</type>
-            <run-flag>Y</run-flag>
-            <Method>GET</Method>
             <API>http://www.recipepuppy.com/api/</API>
             <Name>Recipe Puppy</Name>   
         </testcase>
@@ -345,14 +352,7 @@
             <Method>GET</Method>
             <API>https://api.adviceslip.com/advice</API>
             <Name>Advice Slip</Name>   
-        </testcase>
-        <testcase>
-            <type>pyprest</type>
-            <run-flag>Y</run-flag>
-            <Method>GET</Method>
-            <API>https://api.openbrewerydb.org/breweries</API>
-            <Name>Open Brewery DB</Name>   
-        </testcase>
+        </testcase>  
         <testcase>
             <type>pyprest</type>
             <run-flag>Y</run-flag>
