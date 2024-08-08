@@ -1,0 +1,364 @@
+<data>
+    <suite>
+        <project-name>JEWEL</project-name>
+        <report-name>Open apis</report-name>
+        <environment>beta</environment>
+        <mode>optimize</mode>
+        <jewel-user>gem-sakshiagrawal</jewel-user>
+        <jewel-bridge-token>d7c6bc19-981a-422c-bb1c-d8d5c06fa94c1713258883273</jewel-bridge-token>
+    </suite>
+    <testcases>
+        <testcase>
+            <name>Fake posts</name>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <method>GET</method>
+            <api>https://jsonplaceholder.typicode.com/posts</api>
+        </testcase>
+        <testcase>
+            <name>Random users</name>
+            <method>GET</method>
+            <api>https://randomuser.me/api/?results=1000</api>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method> 
+            <API>https://jsonplaceholder.typicode.com/comments</API>
+            <Name>Fake comments request 2</Name>
+    
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://jsonplaceholder.typicode.com/albums</API>
+            <Name>Fake albums request 3</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://jsonplaceholder.typicode.com/photos</API>
+            <Name>Fake photos request 4</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://jsonplaceholder.typicode.com/todos</API>
+            <Name>Fake todos request 5</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://jsonplaceholder.typicode.com/users</API>
+            <Name>Fake users request 6</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.coindesk.com/v1/bpi/currentprice/BTC.json</API>
+            <Name>Bitcoin price</Name>                
+        </testcase><testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://dog.ceo/api/breeds/image/random</API>
+            <Name>Random dog image 2</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.agify.io?name=michael</API>
+            <Name>Age prediction for Michael</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.agify.io?name=sakshi</API>
+            <Name>Age prediction for Sakshi</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.genderize.io?name=lucy</API>
+            <Name>Gender prediction for Lucy</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.genderize.io?name=Lucky</API>
+            <Name>Gender prediction for Lucky</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.nationalize.io?name=amelie</API>
+            <Name>Nationality prediction for Amelie</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.nationalize.io?name=anelia</API>
+            <Name>Nationality prediction for Anelia</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://catfact.ninja/fact</API>
+            <Name>Random cat fact</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.spacexdata.com/v4/launches/latest</API>
+            <Name>Latest SpaceX launch</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.exchangerate-api.com/v4/latest/USD</API>
+            <Name>Exchange rates for USD</Name>           
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://randomuser.me/api/</API>
+            <Name>Random user 2</Name>            
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.chucknorris.io/jokes/random</API>
+            <Name>Random Chuck Norris joke</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.adviceslip.com/advice</API>
+            <Name>Random advice 2</Name>           
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.adviceslip.com/advice</API>
+            <Name>Random advice</Name>           
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.thecatapi.com/v1/images/search</API>
+            <Name>Random cat image</Name>    
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.kanye.rest/</API>
+            <Name>Random Kanye West quote</Name>       
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://type.fit/api/quotes</API>
+            <Name>Random quote</Name>     
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.jikan.moe/v4/anime?q=anime&sfw</API>
+            <Name>Anime characters and staff</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.agify.io?name=emma</API>
+            <Name>Age prediction for Emma</Name>  
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://dog.ceo/api/breeds/image/random</API>
+            <Name>Random dog image</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.405&hourly=temperature_2m</API>
+            <Name>Weather forecast for Berlin</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.tvmaze.com/shows/1/episodes</API>
+            <Name>Episodes of "Under the Dome"</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.adviceslip.com/advice</API>
+            <Name>Random advice 2</Name>
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.jikan.moe/v4/anime?q=naruto&sfw</API>
+            <Name>Anime characters and staff 2</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://restcountries.com/v3.1/name/canada</API>
+            <Name>Countries API</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://dog-api.kinduff.com/api/facts</API>
+            <Name>Random dog facts</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.quotable.io/random</API>
+            <Name>Inspirational Quotes</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://randomfox.ca/floof</API>
+            <Name>Random Fox API</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>http://geodb-free-service.wirefreethought.com/v1/geo/cities</API>
+            <Name>GeoDB Cities</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://uselessfacts.jsph.pl/random.json?language=en</API>
+            <Name>Random Useless Facts</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://ron-swanson-quotes.herokuapp.com/v2/quotes</API>
+            <Name>Ron Swanson Quotes</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.quotable.io/random</API>
+            <Name>Inspirational Quotes</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>http://jservice.io/api/random</API>
+            <Name>JService (Jeopardy Questions)</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>http://www.recipepuppy.com/api/</API>
+            <Name>Recipe Puppy</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.quotable.io/random</API>
+            <Name>Inspirational Quotes 2</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=IBM&apikey=HKSFG79MPEU5SWPM</API>
+            <Name>Alpha vantage</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.weather.gov/openapi.json</API>
+            <Name>Weather api</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <headers>{"Content-Type": "application/x-www-form-urlencoded"}</headers>
+            <API>https://aztro.sameerkumar.website/?sign=aries&day=today</API>
+            <Name>Astrology API (Daily Horoscope)</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.adviceslip.com/advice</API>
+            <Name>Advice Slip</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://api.openbrewerydb.org/breweries</API>
+            <Name>Open Brewery DB</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <API>https://date.nager.at/api/v3/PublicHolidays/2023/US</API>
+            <Name>Public Holidays</Name>   
+        </testcase>
+        <testcase>
+            <type>pyprest</type>
+            <run-flag>Y</run-flag>
+            <Method>GET</Method>
+            <headers>{"Accept": "application/json"}</headers>
+            <API>https://icanhazdadjoke.com/</API>
+            <Name>jokes api</Name>   
+        </testcase>
+    </testcases>
+</data>
