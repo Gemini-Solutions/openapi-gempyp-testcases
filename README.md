@@ -6,25 +6,26 @@ Steps to run gempyp testcase-xml file:
 
 2. Install pip using  
 
-python -m pip install pip 
+         python -m pip install pip 
+ 
 
 3. Create virtual environment  
 
- python -m venv destinationFolder 
+        python -m venv destinationFolder 
 
 4. Go to desination folder and then Scripts 
 
-cd destinationFolder\Scripts 
+       cd destinationFolder\Scripts 
 
 5. Activate virtual environment  
 
-activate 
+       activate 
 
 6. Install Gempyp 
 
-pip install gempyp 
+       pip install gempyp 
 
-pip show gempyp 
+       pip show gempyp 
 
 7. To run Xml file: 
 
