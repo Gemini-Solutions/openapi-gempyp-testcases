@@ -4,17 +4,15 @@
         <report-name>Comment Controller</report-name>
         <environment>beta</environment>
         <mode>optimize</mode>
-        <threads>8<threads>
-        <jewel-user>gem-ayushgupta</jewel-user>
-        <jewel-bridge-token>06bb99ce-e8df-4244-9ebd-416e5ede07741716889174802</jewel-bridge-token>
+        <threads>8</threads>
+        <jewel-user>ayush.gupta1</jewel-user>
+        <jewel-bridge-token>dcb903f0-2a23-446a-a318-43606de5d4761716894477399</jewel-bridge-token>
     </suite>
     <testcases>
         <testcase>
             <name>Reqres - Get Users</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://reqres.in/api/users?page=2</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -23,8 +21,6 @@
             <name>Reqres - Get Single User</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://reqres.in/api/users/2</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -33,8 +29,6 @@
             <name>Reqres - Get Single User - Negative</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://reqres.in/api/users/278</api>
             <expected-status-code>404</expected-status-code>
             <run-flag>Y</run-flag>
@@ -43,7 +37,6 @@
             <name>Reqres - Create New User</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "name": "Ayush",
                 "job": "SDET"
@@ -53,10 +46,9 @@
             <run-flag>Y</run-flag>
         </testcase>
         <testcase>
-            <name>Reqres - Create New User</name>
+            <name>Reqres - Create Another New User</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "name": "Vansh",
                 "job": "ASP .NET"
@@ -66,10 +58,9 @@
             <run-flag>Y</run-flag>
         </testcase>
         <testcase>
-            <name>Reqres - Create New User</name>
+            <name>Reqres - Create Yet Another New User</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "name": "Sachin",
                 "job": "AI ML"
@@ -82,7 +73,6 @@
             <name>Reqres - Update User - PUT</name>
             <type>pyprest</type>
             <method>PUT</method>
-            <headers></headers>
             <body>{
                 "name": "Sakshi",
                 "job": "SDET"
@@ -95,7 +85,6 @@
             <name>Reqres - Update User - PATCH</name>
             <type>pyprest</type>
             <method>PATCH</method>
-            <headers></headers>
             <body>{
                 "name": "Diksha"
             }</body>
@@ -107,8 +96,6 @@
             <name>Reqres - Delete User</name>
             <type>pyprest</type>
             <method>DELETE</method>
-            <headers></headers>
-            <body></body>
             <api>https://reqres.in/api/users/2</api>
             <expected-status-code>204</expected-status-code>
             <run-flag>Y</run-flag>
@@ -117,7 +104,6 @@
             <name>Reqres - Register User</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "email": "test@email.com",
                 "password": "testing"
@@ -130,7 +116,6 @@
             <name>Reqres - Register User - Negative</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "email": "test@email.com"
             }</body>
@@ -142,7 +127,6 @@
             <name>Reqres - Login User</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "email": "test@email.com",
                 "password": "testing"
@@ -155,7 +139,6 @@
             <name>Reqres - Login User - Negative(Wrong Password)</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "email": "test@email.com",
                 "password": "1234dfadsv"
@@ -168,7 +151,6 @@
             <name>Reqres - Login User - Negative(Missing Password)</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "email": "test@email.com"
             }</body>
@@ -180,8 +162,6 @@
             <name>GoRest - Get All Users</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/users</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -190,8 +170,6 @@
             <name>GoRest - Get Single User</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/users/7322560</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -200,7 +178,6 @@
             <name>GoRest - Create User</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "name": "Ayush Gupta",
                 "email": "test@email.com",
@@ -215,7 +192,6 @@
             <name>GoRest - Update User - PUT</name>
             <type>pyprest</type>
             <method>PUT</method>
-            <headers></headers>
             <body>{
                 "name": "Prasad",
                 "email": "testemail@email.com",
@@ -230,7 +206,6 @@
             <name>GoRest - Update User - PATCH</name>
             <type>pyprest</type>
             <method>PATCH</method>
-            <headers></headers>
             <body>{
                 "name": "Prasad Ravishankar Kumari",
                 "gender": "female"
@@ -243,7 +218,6 @@
             <name>GoRest - Delete User</name>
             <type>pyprest</type>
             <method>DELETE</method>
-            <headers></headers>
             <api>https://gorest.co.in/public/v2/users/7322568</api>
             <expected-status-code>204</expected-status-code>
             <run-flag>Y</run-flag>
@@ -252,8 +226,6 @@
             <name>GoRest - Get All Posts</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/posts</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -262,8 +234,6 @@
             <name>GoRest - Get Single Post</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/posts/147830</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -272,7 +242,6 @@
             <name>GoRest - Create Post</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "user_id": 7322565,
                 "title": "title",
@@ -286,7 +255,6 @@
             <name>GoRest - Update Post - PUT</name>
             <type>pyprest</type>
             <method>PUT</method>
-            <headers></headers>
             <body>{
                 "user_id": 7322565,
                 "title": "title",
@@ -300,7 +268,6 @@
             <name>GoRest - Update Post - PATCH</name>
             <type>pyprest</type>
             <method>PATCH</method>
-            <headers></headers>
             <body>{
                 "user_id": 7322565,
                 "title": "No title"
@@ -313,7 +280,6 @@
             <name>GoRest - Delete Post</name>
             <type>pyprest</type>
             <method>DELETE</method>
-            <headers></headers>
             <api>https://gorest.co.in/public/v2/posts/147830</api>
             <expected-status-code>204</expected-status-code>
             <run-flag>Y</run-flag>
@@ -322,8 +288,6 @@
             <name>GoRest - Get All Comments</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/comments</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -332,8 +296,6 @@
             <name>GoRest - Get Single Comments</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/comments/116300</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -342,7 +304,6 @@
             <name>GoRest - Create Comment</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "post_id": 147816,
                 "name": "Ayush Gupta",
@@ -357,7 +318,6 @@
             <name>GoRest - Update Comment - PUT</name>
             <type>pyprest</type>
             <method>PUT</method>
-            <headers></headers>
             <body>{
                 "post_id": 147816,
                 "name": "Ayush Gupta",
@@ -372,7 +332,6 @@
             <name>GoRest - Update Comment - PATCH</name>
             <type>pyprest</type>
             <method>PATCH</method>
-            <headers></headers>
             <body>{
                 "post_id": 147816,
                 "name": "No Name"
@@ -385,7 +344,6 @@
             <name>GoRest - Delete Comment</name>
             <type>pyprest</type>
             <method>DELETE</method>
-            <headers></headers>
             <api>https://gorest.co.in/public/v2/comments/116298</api>
             <expected-status-code>204</expected-status-code>
             <run-flag>Y</run-flag>
@@ -394,8 +352,6 @@
             <name>GoRest - Get All ToDos</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/todos</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -404,8 +360,6 @@
             <name>GoRest - Get Single ToDo</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/todos/59286</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -414,7 +368,6 @@
             <name>GoRest - Create ToDo</name>
             <type>pyprest</type>
             <method>POST</method>
-            <headers></headers>
             <body>{
                 "user_id": 7322563,
                 "title": "To Do is what to do",
@@ -429,7 +382,6 @@
             <name>GoRest - Update ToDo - PUT</name>
             <type>pyprest</type>
             <method>PUT</method>
-            <headers></headers>
             <body>{
                 "user_id": 7322563,
                 "title": "To Do is what to do",
@@ -444,7 +396,6 @@
             <name>GoRest - Update ToDo - PATCH</name>
             <type>pyprest</type>
             <method>PATCH</method>
-            <headers></headers>
             <body>{
                 "title": "To Do is what to do"
             }</body>
@@ -456,7 +407,6 @@
             <name>GoRest - Delete ToDo</name>
             <type>pyprest</type>
             <method>DELETE</method>
-            <headers></headers>
             <api>https://gorest.co.in/public/v2/todos/59284</api>
             <expected-status-code>204</expected-status-code>
             <run-flag>Y</run-flag>
@@ -465,8 +415,6 @@
             <name>GoRest - Get User's Posts</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/users/7322565/posts</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -475,8 +423,6 @@
             <name>GoRest - Get Post's Comments</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/posts/147829/comments</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
@@ -485,8 +431,6 @@
             <name>GoRest - Get User's ToDos</name>
             <type>pyprest</type>
             <method>GET</method>
-            <headers></headers>
-            <body></body>
             <api>https://gorest.co.in/public/v2/users/7322565/todos</api>
             <expected-status-code>200</expected-status-code>
             <run-flag>Y</run-flag>
